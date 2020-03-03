@@ -42,14 +42,6 @@ int main() {
   std::pair<int,int> s(1,2);
   std::pair<int,int> e(4,4);
   std::cout << solution.maze(input, s, e) << std::endl;
-  for(auto it = input.begin(); it != input.end(); ++it){
-    std::vector<int> n = *it;
-    for(auto it1 = n.begin(); it1 != n.end(); ++it1){
-      int n1 = *it1;
-      std::cout<< n1<< " ";
-    }
-    std::cout <<  std::endl;
-  }
 
   std::vector<std::vector<int>> input1 = {{1, 1, 0, 0, 0},
                                           {1, 0, 1, 1, 1},
@@ -59,14 +51,6 @@ int main() {
   std::pair<int,int> s1(0,0);
   std::pair<int,int> e1(4,4);
   std::cout << solution.maze(input1, s1, e1) << std::endl;
-  for(auto it = input1.begin(); it != input1.end(); ++it){
-    std::vector<int> n = *it;
-    for(auto it1 = n.begin(); it1 != n.end(); ++it1){
-      int n1 = *it1;
-      std::cout<< n1<< " ";
-    }
-    std::cout <<  std::endl;
-  }
 
   std::vector<int> v = {9, 7, 5, 11, 12, 2, 14, 3, 10, 6};
   solution.quicksort(v,9);
